@@ -11,25 +11,36 @@ var userGuess = event.key;
 var cpuGuess = randomLetter[Math.floor(Math.random() * randomLetter.length)]
 
 
-//variable holding our wins and losses
+//variable holding our wins,losses,guesses
 var wins =0;
 var losses =0;
+var guessLeft =12;
+
 
 //Varibles that hold refrences to java that we want to sidplay in HTML
 var yourGuessesText = document.getElementById("yourGuesses-text");
-var winsText = document.getElementById("wins-text");
+var winsText = document.getElementById("wins-text")
+var lossesText = document.getElementById("losses-text");
+var guessLeft = document.getElementById("guessLeft-text");
 
 
-//If we guess same as computer we win
-if (userGuess === cpuGuess) {
+
+if (userGuess === cpuGuess) { //user wins
     wins++;
 }
+
+else if (userGuess !== cpuGuess) { //user
+    losses++;
+}
+
 
 
 
 
 //Display Java to HTML
 yourGuessesText.textContent = "Your Guesses so far: " + userGuess;
+winsText.textContent = "Wins: " + wins;
+lossesText.textContent = "Losses: " + losses;
 
 
 
