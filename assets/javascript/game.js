@@ -35,6 +35,11 @@ document.onkeydown = function (event) {
         guessesSoFar.push(userGuess);
 
 
+if (userGuess !== cpuGuess) { //guesses left subtract
+    guessesLeft--;
+    
+    
+}
 
     }
 
