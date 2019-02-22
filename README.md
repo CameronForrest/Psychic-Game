@@ -4,7 +4,7 @@
 <h1>Technology</h1>
 <ul>
   <li>HTML5,CSS,Javascript,</li>
-  <li>Live Demo https://cameronforrest.github.io/responsive_portfolio/ </li>
+  <li>Live Demo https://cameronforrest.github.io/Psychic-Game/ </li>
 </ul>
 <h1>About</h1>
 <ul>
